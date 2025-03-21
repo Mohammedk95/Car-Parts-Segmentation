@@ -24,7 +24,7 @@ The model is trained on a custom dataset containing images of car parts. The dat
 ---
 
 ## Results
-- **Training**: The model is trained for 30 epochs with an image size of 640x640.
+- **Training**: The model is trained for **50 epochs** with an image size of 640x640 using **Google Colab Pro with an A100 GPU** for accelerated training.
 - **Validation**: The model achieves high accuracy, as measured by mAP@0.5 and mAP@0.5:0.95.
 - **Prediction**: The model can accurately segment car parts in new images, even under challenging conditions.
 
@@ -40,25 +40,14 @@ To use this project, follow these steps:
 
 ---
 
-## Folder Structure
-The project is organized as follows:
-```
-carparts-segmentation/
-├── carparts-seg.yaml          # Dataset configuration file
-├── runs/                      # Output folder for training and prediction
-│   ├── train-v1/              # Training outputs (weights, logs, etc.)
-│   └── predict-v1/            # Prediction outputs (images, labels, etc.)
-└── README.md                  # This file
-```
-
----
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Notes
+- **Prediction Results**: The output of the prediction step (e.g., segmented images) is **only for visualization purposes**. It helps in understanding the model's performance and does not represent any quantitative evaluation.
+- **Hardware**: This project utilizes **Google Colab Pro with an A100 GPU** for faster training and inference.
 
 ---
 
 ## Acknowledgments
-- Ultralytics for the YOLOv8 implementation.
-- Google Colab for providing a free GPU environment.
+- [Ultralytics](https://docs.ultralytics.com/datasets/segment/carparts-seg/) for the YOLOv8 implementation and dataset reference.
+- Google Colab Pro for providing access to high-performance A100 GPUs.
 
+---
