@@ -9,6 +9,13 @@ Segmenting car parts in images is a challenging task due to factors like varying
 
 ---
 
+## Google Colab Notebook
+You can access and run the full code in the Google Colab notebook below. The notebook includes all the steps, from installing dependencies to training, validation, and prediction.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sJoWCRZ06s4Gno-pHOhQi0l03Ffu1Y9x?usp=sharing)
+
+---
+
 ## Solution
 The solution involves training a YOLOv8 segmentation model on a custom dataset of car parts. The trained model is then used to predict and segment car parts in new, unseen images. The process includes:
 
