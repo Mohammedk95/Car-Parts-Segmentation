@@ -1,6 +1,6 @@
 # Car Parts Segmentation using YOLOv8
 
-This project focuses on segmenting car parts in images using the YOLOv8 segmentation model. The goal is to accurately detect and segment various car parts, such as wheels, doors, mirrors, headlights, and bumpers, in images. This task is essential for applications like automotive repair, quality control, and autonomous driving.
+This project focuses on segmenting car parts in images using the YOLOv8 segmentation model. The goal is to accurately detect and segment various car parts, such as wheels, doors, mirrors, headlights, bumpers, and more, in images. This task is essential for applications like automotive repair, quality control, and autonomous driving.
 
 ---
 
@@ -19,14 +19,19 @@ The solution involves training a YOLOv8 segmentation model on a custom dataset o
 ---
 
 ## Dataset
-The model is trained on a custom dataset containing images of car parts. The dataset is organized into training and validation sets, with annotations for each car part. The dataset configuration is defined in a YAML file, which specifies the paths to the images and the class names.
+- The model is trained on a custom dataset containing images of car parts. The dataset is organized into training and validation sets, with annotations for each car part. The dataset configuration is defined in a YAML file, which specifies the paths to the images and the class names.
+- Dataset link: https://universe.roboflow.com/gianmarco-russo-vt9xr/car-seg-un1pm/dataset/4
 
 ---
 
 ## Results
-- **Training**: The model is trained for **50 epochs** with an image size of 640x640 using **Google Colab Pro with an A100 GPU** for accelerated training.
+- **Training**: The model is trained for **60 epochs** with an image size of 640x640 using **Google Colab Pro with an A100 GPU** for accelerated training.
 - **Validation**: The model achieves high accuracy, as measured by mAP@0.5 and mAP@0.5:0.95.
 - **Prediction**: The model can accurately segment car parts in new images, even under challenging conditions.
+- ![Screenshot 2025-03-23 061018](https://github.com/user-attachments/assets/a06c278b-b87c-46fb-92b5-4616d311fe2b)
+- ![Screenshot 2025-03-23 061127](https://github.com/user-attachments/assets/ce630e05-ef4e-48bb-8f65-96b2ca144396)
+- ![Screenshot 2025-03-23 061143](https://github.com/user-attachments/assets/ad52e4c4-b729-4ca5-8b2a-9c9933f51818)
+- ![Screenshot 2025-03-23 061225](https://github.com/user-attachments/assets/b803ff3a-1a22-4bc9-87b8-50518377cc5f)
 
 ---
 
@@ -54,7 +59,7 @@ To use this project, follow these steps:
 ---
 
 ## Acknowledgments
-- [Ultralytics](https://docs.ultralytics.com/datasets/segment/carparts-seg/) for the YOLOv8 implementation and dataset reference.
+- Reference: [Ultralytics](https://docs.ultralytics.com/datasets/segment/carparts-seg/) for the YOLOv8 implementation and dataset reference.
 - Google Colab Pro for providing access to high-performance A100 GPUs.
 
 ---
